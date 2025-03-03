@@ -37,13 +37,23 @@ layout: page
       {% endif %}
 
       <a href="{{ post.url | absolute_url }}">
-        <h2 class="post-title" style="font-size: 20px;">{{ post.title | strip_html }}</h2>
+        <h2 class="post-title">{{ post.title | strip_html }}</h2>
 
         {% if post.subtitle %}
           <h3 class="post-subtitle">
           {{ post.subtitle | strip_html }}
           </h3>
         {% endif %}
+
+        <div class="post-video">
+          <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/7in41qI9jg8" 
+            title="AV24 Onboard - Double overtake at Las Vegas Motor Speedway during testing at CES 2025" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </a>
 
       {% if post.author %}
